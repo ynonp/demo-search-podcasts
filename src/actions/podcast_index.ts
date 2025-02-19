@@ -1,6 +1,6 @@
 'use server';
 import crypto from 'node:crypto';
-import type {PIApiFeed, ApiResponse} from '../types/podcast_index';
+import type {ApiResponse} from '../types/podcast_index';
 
 function getHeaders() {
   const apiKey = process.env.PODCASTINDEX_API_KEY;
