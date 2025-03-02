@@ -28,7 +28,6 @@ function getHeaders() {
 
 export async function searchByTerm(term: string): Promise<ApiResponse.Search> {
   const url = `https://api.podcastindex.org/api/1.0/search/byterm?q=${encodeURIComponent(term)}`
-  console.log(getHeaders());
   return fetch(url, {
     method: "GET",
     headers: getHeaders(),
